@@ -1,0 +1,8 @@
+pipelines:
+  - name: windows_pipelines
+    steps:
+      - name: windows_pipelines_0001
+        type: PowerShell
+        execution:
+          onExecute:
+            - echo "executing step..."
