@@ -2,7 +2,7 @@ pipelines:
   - name: windows_pipelines
     steps:
       - name: windows_pipelines_0001
-        type: PowerShell
+        type: bash
         configuration:
           nodePool: azure_win
         execution:
