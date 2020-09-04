@@ -3,8 +3,6 @@ pipelines:
     steps:
       - name: windows_pipelines_0001
         type: bash
-        configuration:
-          nodePool: azure_win
         execution:
           onExecute:
             - echo "executing step..."
