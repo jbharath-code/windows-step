@@ -29,7 +29,7 @@ pipelines:
             - get-childitem $res_myRepo_resourcePath
             - find_resource_variable myRepo $res_myRepo_resourcePath
             - New-Item -Path 'C:\Users\Administrator\Documents\hello.txt' -ItemType File 
-            - 'Hello world! This is the first line of my file.' | out-file -filepath C:\Users\Administrator\Documents\hello.txt 
+            - Set-Content -Path "C:\Users\Administrator\Documents\hello.txt" -Value "My Value" -Force 
             - add_run_files -sources "C:\Users\Administrator\Documents\hello.txt" -name repo_pipe   
             - add_pipeline_files -sources "C:\Users\Administrator\Documents\hello.txt" -name vijay                
       - name: functions2
@@ -40,7 +40,7 @@ pipelines:
         execution:
           onExecute:
             - get-childitem $res_myRepo_resourcePath    
-            - restore_run_files -name repo_pipe -path $step_tmp_dir   
+            - restore_run_files -name repo_pipe -path "C:\Users\Administrator\Documents\hello.txt"   
             - get-childitem $res_myRepo_resourcePath     
       - name: functions3
         type: PowerShell 
@@ -50,5 +50,5 @@ pipelines:
         execution:
           onExecute:
             - get-childitem $res_myRepo_resourcePath                        
-            - restore_pipeline_files -name vijay -path $step_tmp_dir
+            - restore_pipeline_files -name vijay -path "C:\Users\Administrator\Documents\hello.txt"
             - get-childitem $step_tmp_dir
