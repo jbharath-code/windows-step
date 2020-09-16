@@ -5,14 +5,14 @@ resources:
       sourceArtifactory: artifactory
       pattern: art-docker # required, either this or aql
       aql: items.find({"@artifact.name":{"$eq":"pipelines_1599646149"}}) # required, either this or pattern
-      props: "key=value"
-      recursive: true
-      flat: true
-      excludePatterns: "*.sha1"
-      archiveEntries: "artifactory"
-      buildName: test
-      buildNumber: 10
-      sortBy: size
-      sortOrder: desc
-      limit: 1
-      offset: 3
+#       props: "key=value"
+#       recursive: true
+#       flat: true
+#       excludePatterns: "*.sha1"
+#       archiveEntries: "artifactory"
+#       buildName: test
+#       buildNumber: 10
+#       sortBy: size
+#       sortOrder: desc
+#       limit: 1
+#       offset: 3
