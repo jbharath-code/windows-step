@@ -3,7 +3,7 @@ resources:
   - name: S_Bash_0397_FileSpec
     type: FileSpec
     configuration:
-      sourceArtifactory: artifactory
+      sourceArtifactory: art_v
       aql: items.find({"repo":{"example-repo-local"}}) # required, either this or pattern
 
 pipelines:
