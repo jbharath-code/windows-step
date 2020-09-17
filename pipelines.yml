@@ -4,7 +4,7 @@ resources:
     type: FileSpec
     configuration:
       sourceArtifactory: art_v
-      pattern: example 
+      pattern: pipelines_1598593797/extensions/resources/Gitnp/gittest1/latest/gittest1_latest.tar.gz 
 pipelines:
 
   - name: pipelines_S_Bash_0397
