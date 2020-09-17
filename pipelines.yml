@@ -3,7 +3,7 @@ resources:
   - name: S_Bash_0397_FileSpec
     type: FileSpec
     configuration:
-      sourceArtifactory: art_v
+      sourceArtifactory: artifactory
       pattern: pipelines_1599764926/projects/1/pipelines/2/runs/1/steps/1/1.tar.gz
 pipelines:
 
