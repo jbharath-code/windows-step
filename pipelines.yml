@@ -4,8 +4,7 @@ resources:
     type: FileSpec
     configuration:
       sourceArtifactory: art_v
-      aql: "{"repo":"example-repo-local"}"
-      
+      aql: "{"repo":"example-repo-local"}"      
 pipelines:
 
   - name: pipelines_S_Bash_0397
