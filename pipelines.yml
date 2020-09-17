@@ -4,7 +4,7 @@ resources:
     type: FileSpec
     configuration:
       sourceArtifactory: art_v
-      aql: {"repo":"example-repo-local"} # required, either this or pattern
+      aql: "{"repo":"example-repo-local"}" # required, either this or pattern
 
 pipelines:
 
