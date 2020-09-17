@@ -4,7 +4,9 @@ resources:
     type: FileSpec
     configuration:
       sourceArtifactory: art_v
-      aql: items.find({"@build.name":{"$eq":"artifactory"}})
+#       aql: items.find({"@build.name":{"$eq":"artifactory"}})
+        pattern: example # required, either this or aql
+
 pipelines:
 
   - name: pipelines_S_Bash_0397
