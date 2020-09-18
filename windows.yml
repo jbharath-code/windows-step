@@ -5,8 +5,6 @@ resources:
     configuration:
       sourceArtifactory: art_v
       aql: '{"items.find":{"modified":{"$last":"3d"}}}'
-      recursive: false
-
 pipelines:
 
   - name: pipelines_S_PS_R_FLSPEC_0001
