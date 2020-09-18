@@ -3,7 +3,7 @@ resources:
   - name: S_PS_R_FLSPEC_0001_FileSpec
     type: FileSpec
     configuration:
-      sourceArtifactory: s_artifactory
+      sourceArtifactory: artifactory
       aql: '{"items.find":{"modified":{"$last":"3d"}}}'
       recursive: false
 
