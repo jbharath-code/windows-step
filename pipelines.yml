@@ -4,7 +4,7 @@ resources:
     type: FileSpec
     configuration:
       sourceArtifactory: artifactory
-      aql: {"items.find":{"name":{"$eq":"pipelines_1599764926/projects/1/pipelines/2/runs/1/steps/1/1.tar.gz"}}}	
+      aql: '{"items.find":{"name":{"$eq":"pipelines_1599764926/projects/1/pipelines/2/runs/1/steps/1/1.tar.gz"}}}'	
 pipelines:
 
   - name: pipelines_S_Bash_0397
