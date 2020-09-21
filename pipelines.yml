@@ -11,9 +11,6 @@ pipelines:
     steps:
       - name: S_Bash_0397
         type: Bash
-        configuration:
-          inputResources:
-            - name: S_Bash_0397_FileSpec
         execution:
           onExecute:
             - echo "executing step..."
