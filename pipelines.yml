@@ -4,13 +4,16 @@ resources:
     type: FileSpec
     configuration:
       sourceArtifactory: artifactory
-      aql: '{"items.find":{"repo":"pipelines_1599646149/"}}'
+      aql: '{"builds.find":{"modified":{"$last":"3d"}}}'
 pipelines:
 
   - name: pipelines_S_Bash_0397
     steps:
       - name: S_Bash_0397
         type: Bash
+        configuration:
+          inputResources:
+            - name: S_Bash_0397_FileSpec
         execution:
           onExecute:
             - echo "executing step..."
