@@ -2,19 +2,19 @@ resources:
   - name: S_PS_R_FLSPEC_0018
     type: FileSpec
     configuration:
-      sourceArtifactory: art_v
+      sourceArtifactory: s_artifactory
       aql: '{"items.find":{"name":{"$match":"s_foo*"}}}'
-      target: "testing/"
+      target: 'C:\Users\pipelines\testing'
 pipelines:
   - name: pipelines_S_PS_R_FLSPEC_0018
     steps:
       - name: S_PS_R_FLSPEC_0018
         type: PowerShell
         configuration:
-          nodePool: win_2019
+          nodePool: windows-static
           inputResources:
             - name: S_PS_R_FLSPEC_0018
         execution:
           onExecute:
             - write-output "executing step..."
-            - if (Test-Path "testing/s_foo"){ Write-Output "successful"}
+            - if (Test-Path "C:\Users\pipelines\testing\s_foo"){ Write-Output "successful"}
