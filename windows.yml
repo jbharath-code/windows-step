@@ -11,7 +11,7 @@ pipelines:
       - name: S_PS_R_FLSPEC_0018
         type: PowerShell
         configuration:
-          nodePool: windows-static
+          nodePool: win_2019
           inputResources:
             - name: S_PS_R_FLSPEC_0018
         execution:
