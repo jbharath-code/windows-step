@@ -4,6 +4,7 @@ resources:
     configuration:
       sourceArtifactory: art_v
       aql: '{"items.find":{"name":{"$match":"s_foo*"}}}'
+      target: "testing/"
 pipelines:
   - name: pipelines_S_PS_R_FLSPEC_0018
     steps:
