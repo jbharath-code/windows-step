@@ -4,7 +4,7 @@ resources:
     configuration:
       sourceArtifactory: s_artifactory
       aql: '{"items.find":{"name":{"$match":"s_foo*"}}}'
-      target: 'C:\Users\pipelines\Documents\'
+      target: 'C:\Users\pipelines\Desktop\'
 pipelines:
   - name: pipelines_S_PS_R_FLSPEC_0018
     steps:
